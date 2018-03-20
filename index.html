@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+<body class="main-box">
+        <div id="main" class="row">
+            <div class="col-md-2"></div>
+            <div class="col-md-8 col-s-12 col-xs-12">
+                <h1><center>Robert's Rocking Trivia</center></h1>
+                <button id="startButton" class="show">Start</button>
+            </div>
+            <div class="col-md-2"></div>
+        </div>
+        <div id = "wrapper" class = 'dontShow'>
+            <div id="trivia" class="row">
+                <div class="col-md-2"></div>
+                <div class="col-md-6 col-s-12 col-xs-12" id="content">
+                    <div id="timer">you have <span id="countDownTimer"></span> seconds left.</div>
+                    <div id="question1" class="question"><h3>How many championships have the Chicago Bears won?</h3>
+                        <input type="radio" id="q1a" name="ques1" value = "a" class="unchecked">0
+                        <input type="radio" id="q1b" name="ques1" value = "b" class="checked">1
+                        <input type="radio" id="q1c" name="ques1" value = "c" class="unchecked">2
+                        <input type="radio" id="q1d" name="ques1" value = "d" class="unchecked">3
+                        <input type="radio" id="q1e" name="ques1" value = "e" class="unchecked">4
+                    </div>
+                    <div id="question2" class="question"><h3>How many World Series have the Cubs won in the last century?</h3>
+                        <input type="radio" id="q2a" name="ques2" value = "a" class="unchecked">All of them
+                        <input type="radio" id="q2b" name="ques2" value = "b" class="unchecked">0
+                        <input type="radio" id="q2c" name="ques2" value = "c" class="checked">1
+                        <input type="radio" id="q2d" name="ques2" value = "d" class="unchecked">2
+                        <input type="radio" id="q2e" name="ques2" value = "e" class="unchecked">Who?
+                    </div>
+                    <div id="question3" class="question">
+                        <h3>Who wore #23 for the Chicago Bulls?</h3>
+                        <div class="question-wrap">
+                            <input type="radio" id="q3a" name="ques3" value = "a" class="unchecked">Scottie Pippen
+                            <input type="radio" id="q3b" name="ques3" value = "b" class="unchecked">Vlade Divac
+                            <input type="radio" id="q3c" name="ques3" value = "c" class="checked">Michael Jordan
+                            <input type="radio" id="q3d" name="ques3" value = "d" class="unchecked">Horace Grant
+                            <input type="radio" id="q3e" name="ques3" value = "e" class="unchecked">Luc Longley
+                        </div>
+                    </div>
+                    <div id="question4" class="question">
+                        <h3>What's the name of Chicago's "other" baseball team?</h3>
+                        <input type="radio" id="q4a" name="ques4" value = "a" class="unchecked">South Side Suckas
+                        <input type="radio" id="q4b" name="ques4" value = "b" class="unchecked">The Junior Cubs
+                        <input type="radio" id="q4c" name="ques4" value = "c" class="unchecked">The Jabronies
+                        <input type="radio" id="q4d" name="ques4" value = "d" class="unchecked">White Socks
+                        <input type="radio" id="q4e" name="ques4" value = "e" class="unchecked">Doesnt't Matter
+                    </div>
+                    <div id="question5" class="question">
+                        <h3>Who is the greatest running back of all time?</h3>
+                        <input type="radio" id="q5a" name="ques5" value = "a" class="unchecked">Gale Sayers
+                        <input type="radio" id="q5b" name="ques5" value = "b" class="unchecked">Walter Payton
+                        <input type="radio" id="q5c" name="ques5" value = "c" class="unchecked">Matt Forte
+                        <input type="radio" id="q5d" name="ques5" value = "d" class="unchecked">Cedric Benson
+                        <input type="radio" id="q5e" name="ques5" value = "e" class="unchecked">Rashan Salaam
+                    </div>
+                    <div id="question6" class="question">
+                        <h3>Who owns the Minnesota Wild?</h3>
+                        <input type="radio" id="q6a" name="ques6" value = "a" class="unchecked">Some faceless billionaire
+                        <input type="radio" id="q6b" name="ques6" value = "b" class="unchecked">Craig Leipold
+                        <input type="radio" id="q6c" name="ques6" value = "c" class="unchecked">The Chicago Blackhawks
+                        <input type="radio" id="q6d" name="ques6" value = "d" class="unchecked">Zygi Wilf
+                    </div>
+                    <button id="finishButton">Finish</button>
+                </div>
+                <div class="col-md-2"></div>
+            </div>
+        </div>
+        <div id="wrapper2" class="dontShow">
+            <div class="col-md-2"></div>
+            <div class="col-md-8 col-s-12 col-xs-12"></div>    
+                <div><h3>All Done!</h3></div>
+                <div id="correctAnswers">You got <span id="correct"></span>answers correct.</div>
+                <div id="wrongAnswers">You got <span id="incorrect"></span>answers incorrect.</div>
+                <div id="unanswered">You left <span id="blank"></span>questions unanswered.</div>
+            </div>    
+            <div class="col-md-2"></div>
+        </div>
+
+    </div>
+
+
+    <script
+    src="https://code.jquery.com/jquery-3.3.1.js"
+    integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+    crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>    <link rel="stylesheet" href="./assets./css./style.css">
+
+    <script src="./assets/javascript/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+{
+  "name": "triviagame",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/scoslo5512/TriviaGame.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/scoslo5512/TriviaGame/issues"
+  },
+  "homepage": "https://github.com/scoslo5512/TriviaGame#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "eslint": "^4.19.0"
+  }
+}

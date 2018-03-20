@@ -1,0 +1,22 @@
+
+body {
+    background-image: url(..assets/images/585752407-chicago-flag-wallpaper.jpg); 
+}
+
+#startButton, #finishButton{
+    width: 150px; 
+    height: 75px; 
+    background-color: aquamarine; 
+}
+
+.dontShow, .noShow {
+    display: none; 
+}
+
+#content {
+    background-color:lightpink; 
+}
+
+.question-wrap {
+     align-content: center; 
+}
